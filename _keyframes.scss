@@ -1,0 +1,21 @@
+@keyframes leadDragAnime {
+  0% {
+    transform: translate(none);
+    opacity: 0;
+  }
+  10% {
+    transform: translate(none);
+    opacity: 0.5;
+  }
+  60% {
+    transform: translateX(21vw);
+    opacity: 0.5;
+  }
+  70% {
+    transform: translateX(21vw);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}

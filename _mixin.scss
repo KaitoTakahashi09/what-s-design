@@ -1,0 +1,31 @@
+@mixin content-size(
+  $width,
+  $height
+) {
+  width: $width;
+  &::before {
+    content: "";
+    display: block;
+    padding-top: $height;
+  }
+}
+
+@mixin animation(
+  $name,
+  $duration: 1s,
+  $timing-function: ease,
+  $delay: 0s,
+  $iteration-count: 1,
+  $direction: normal,
+  $fill-mode: forwards
+) {
+  animation: {
+    name: $name;
+    duration: $duration;
+    timing-function: $timing-function;
+    delay: $delay;
+    iteration-count: $iteration-count;
+    direction: $direction;
+    fill-mode: $fill-mode;
+  }
+}
